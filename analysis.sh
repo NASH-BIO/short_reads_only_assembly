@@ -12,11 +12,10 @@ WORK_DIR="$(pwd)"
 echo "Working in: ${WORK_DIR}"
 
 # Create directories in the current folder
-mkdir -p 00_raw_reads
-mkdir -p 01_qc_before_processing
-mkdir -p 02_process_reads
-mkdir -p 03_qc_after_processing
-
+mkdir -p "${WORK_DIR}/00_raw_reads"
+mkdir -p "${WORK_DIR}/01_qc_before_processing"
+mkdir -p "${WORK_DIR}/02_process_reads"
+mkdir -p "${WORK_DIR}/03_qc_after_processing"
 echo "---------------------------------------------------"
 echo "Directories created in: ${WORK_DIR}"
 echo "---------------------------------------------------"
@@ -49,8 +48,26 @@ conda activate 01_short_read_qc
 mkdir reports
 fastqc -o reports --extract --svg -t 12 "${WORK_DIR}/00_raw_reads/"*.fastq.gz
 
-# run multiqc on fastqc files
-conda activate 02_multiqc
-#expert use case of multiqc
-multiqc -p -o "${WORK_DIR}/01_qc_before_processing/multiqc/fastqc_multiqc" ./
+#run fastp for read trimming and filtering
+cd "${WORK_DIR}/02_process_reads"
+conda activate 01_short_read_qc
+fastp \
+  -i "${WORK_DIR}/00_raw_reads/codanics_1.fastq.gz" \
+  -I "${WORK_DIR}/00_raw_reads/codanics_2.fastq.gz" \
+  -o "${WORK_DIR}/02_process_reads/codanics_1_processed.fastq.gz" \
+  -O "${WORK_DIR}/02_process_reads/codanics_2_processed.fastq.gz" \
+  -q 25 \
+  -h "${WORK_DIR}/03_qc_after_processing/fastp_report.html" \
+  -j "${WORK_DIR}/03_qc_after_processing/fastp_report.json" \
+  -w 12
 
+# fastqc and multi qc run on processed reads
+cd "${WORK_DIR}/03_qc_after_processing"
+conda activate 01_short_read_qc
+mkdir reports_fastqc_processed
+fastqc -o reports_fastqc_processed --extract --svg -t 12 "${WORK_DIR}/02_process_reads/"*.fastq.gz
+# run multiqc on fastqc files of processed reads
+conda activate 02_multiqc
+multiqc -p -o "${WORK_DIR}/03_qc_after_processing/multiqc/fastqc_multiqc_processed" ./
+echo ""
+echo "Quality control and read processing completed."

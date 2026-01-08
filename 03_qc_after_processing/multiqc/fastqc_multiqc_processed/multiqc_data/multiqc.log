@@ -1,0 +1,66 @@
+[2026-01-09 00:37:30,988] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/neha/miniconda3/envs/02_multiqc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc_config.yaml
+[2026-01-09 00:37:30,988] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/neha/.multiqc_config.yaml
+[2026-01-09 00:37:30,988] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2026-01-09 00:37:30,988] multiqc                                            [DEBUG  ]  Command used: /home/neha/miniconda3/envs/02_multiqc/bin/multiqc -p -o /home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed ./
+[2026-01-09 00:37:30,988] multiqc                                            [DEBUG  ]  Could not connect to multiqc.info for version check
+[2026-01-09 00:37:30,988] multiqc                                            [INFO   ]  This is MultiQC v1.0.dev0
+[2026-01-09 00:37:30,988] multiqc                                            [DEBUG  ]  Command     : /home/neha/miniconda3/envs/02_multiqc/bin/multiqc -p -o /home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed ./
+[2026-01-09 00:37:30,988] multiqc                                            [DEBUG  ]  Working dir : /home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing
+[2026-01-09 00:37:30,989] multiqc                                            [INFO   ]  Template    : default
+[2026-01-09 00:37:30,989] multiqc                                            [INFO   ]  Searching './'
+[2026-01-09 00:37:30,989] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, peddy, methylQA, qualimap, preseq, quast, rseqc, busco, goleft_indexcov, snpeff, gatk, htseq, bcftools, featureCounts, picard, prokka, samblaster, samtools, bamtools, bismark, hicup, salmon, kallisto, slamdunk, star, tophat, bowtie2, bowtie1, cutadapt, trimmomatic, skewer, fastq_screen, fastqc, clusterflow
+[2026-01-09 00:37:30,989] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpeQgJOP
+[2026-01-09 00:37:31,197] multiqc.modules.custom_content.custom_content      [DEBUG  ]  No custom content found
+[2026-01-09 00:37:31,199] multiqc.modules.peddy.peddy                        [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,201] multiqc.modules.methylQA.methylQA                  [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,202] multiqc.modules.qualimap.QM_BamQC                  [DEBUG  ]  Using default Qualimap thresholds: 1, 5, 10, 30, 50
+[2026-01-09 00:37:31,204] multiqc.modules.qualimap.qualimap                  [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,215] multiqc.modules.preseq.preseq                      [DEBUG  ]  Could not find any preseq data in ('./',)
+[2026-01-09 00:37:31,217] multiqc.modules.quast.quast                        [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,249] multiqc.modules.rseqc.rseqc                        [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,250] multiqc.modules.busco.busco                        [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,252] multiqc.modules.goleft_indexcov.goleft_indexcov    [DEBUG  ]  Did not find goleft indexcov outputs in ('./',)
+[2026-01-09 00:37:31,260] multiqc.modules.snpeff.snpeff                      [DEBUG  ]  Could not find any data in ('./',)
+[2026-01-09 00:37:31,270] multiqc.modules.gatk.gatk                          [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,280] multiqc.modules.htseq.htseq                        [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,288] multiqc.modules.bcftools.bcftools                  [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,290] multiqc.modules.featureCounts.feature_counts       [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,367] multiqc.modules.picard.picard                      [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,369] multiqc.modules.prokka.prokka                      [DEBUG  ]  Could not find any Prokka data in ('./',)
+[2026-01-09 00:37:31,377] multiqc.modules.samblaster.samblaster              [DEBUG  ]  Could not find any data in ('./',)
+[2026-01-09 00:37:31,400] multiqc.modules.samtools.samtools                  [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,408] multiqc.modules.bamtools.bamtools                  [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,411] multiqc.modules.bismark.bismark                    [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,413] multiqc.modules.hicup.hicup                        [DEBUG  ]  Could not find any HiCUP data in ('./',)
+[2026-01-09 00:37:31,415] multiqc.modules.salmon.salmon                      [DEBUG  ]  Could not find any Salmon data in ('./',)
+[2026-01-09 00:37:31,423] multiqc.modules.kallisto.kallisto                  [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,465] multiqc.modules.slamdunk.slamdunk                  [DEBUG  ]  No slamdunk reports found.
+[2026-01-09 00:37:31,467] multiqc.modules.star.star                          [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,469] multiqc.modules.tophat.tophat                      [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,477] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,487] multiqc.modules.bowtie1.bowtie1                    [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,495] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,503] multiqc.modules.trimmomatic.trimmomatic            [DEBUG  ]  Could not find any Trimmomatic data in ('./',)
+[2026-01-09 00:37:31,511] multiqc.modules.skewer.skewer                      [DEBUG  ]  Could not find any data in ('./',)
+[2026-01-09 00:37:31,512] multiqc.modules.fastq_screen.fastq_screen          [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:31,519] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'codanics_2_processed_fastqc.zip' as already parsed 'codanics_2_processed'
+[2026-01-09 00:37:31,519] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'codanics_1_processed_fastqc.zip' as already parsed 'codanics_1_processed'
+[2026-01-09 00:37:31,519] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 2 reports
+[2026-01-09 00:37:33,369] multiqc.modules.clusterflow.clusterflow            [DEBUG  ]  Could not find any reports in ('./',)
+[2026-01-09 00:37:33,369] multiqc                                            [INFO   ]  Report      : multiqc/fastqc_multiqc_processed/multiqc_report.html
+[2026-01-09 00:37:33,369] multiqc                                            [INFO   ]  Data        : multiqc/fastqc_multiqc_processed/multiqc_data
+[2026-01-09 00:37:33,369] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/multiqc_sources.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,369] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/mqc_fastqc_per_sequence_gc_content_plot_Counts.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/mqc_fastqc_sequence_duplication_levels_plot_1.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/mqc_fastqc_per_sequence_gc_content_plot_Percentages.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/multiqc_fastqc.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/multiqc_general_stats.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/mqc_fastqc_per_sequence_quality_scores_plot_1.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/mqc_fastqc_sequence_length_distribution_plot_1.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/mqc_fastqc_per_base_n_content_plot_1.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpeQgJOP/multiqc_data/mqc_fastqc_per_base_sequence_quality_plot_1.txt' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_data'
+[2026-01-09 00:37:33,370] multiqc                                            [INFO   ]  Plots       : multiqc/fastqc_multiqc_processed/multiqc_plots
+[2026-01-09 00:37:33,370] multiqc                                            [DEBUG  ]  Moving plots directory from '/tmp/tmpeQgJOP/multiqc_plots/png' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_plots'
+[2026-01-09 00:37:33,371] multiqc                                            [DEBUG  ]  Moving plots directory from '/tmp/tmpeQgJOP/multiqc_plots/svg' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_plots'
+[2026-01-09 00:37:33,371] multiqc                                            [DEBUG  ]  Moving plots directory from '/tmp/tmpeQgJOP/multiqc_plots/pdf' to '/home/neha/03_wgs_assembly/short_reads_only_assembly /03_qc_after_processing/multiqc/fastqc_multiqc_processed/multiqc_plots'
+[2026-01-09 00:37:33,420] multiqc                                            [INFO   ]  MultiQC complete
